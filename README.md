@@ -1,4 +1,4 @@
-# Wireless_EMG
+# Open wireless EMG
 
 Two-channel wireless EMG acquisition system
 
