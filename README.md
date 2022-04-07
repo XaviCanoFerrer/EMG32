@@ -32,6 +32,8 @@ Both mistakes are solved in V2 but still not tested.
 
 # Some preliminary data:
 
-![alt text](https://github.com/XaviCanoFerrer/Open_wireless_EMG/blob/main/Data/Forearm_uV_vs_t.png?raw=true)![alt text](https://github.com/XaviCanoFerrer/Open_wireless_EMG/blob/main/Data/Forearm_uV_vs_t_rect.png?raw=true)
+![alt text](https://github.com/XaviCanoFerrer/Open_wireless_EMG/blob/main/Data/Forearm_uV_vs_t.png?raw=true)
+
+![alt text](https://github.com/XaviCanoFerrer/Open_wireless_EMG/blob/main/Data/Forearm_uV_vs_t_rect.png?raw=true)
 
 
