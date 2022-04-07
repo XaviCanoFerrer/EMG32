@@ -2,7 +2,7 @@
 
 Two-channel wireless EMG acquisition system
 
-Features:
+# Features:
 
 Adjustable gain 100-10000
 
@@ -15,7 +15,7 @@ First order high and low pass filters fc = 22 Hz and fc = 482 Hz
 LiPo battery power management system (It can be charged from the USB port)
 
 
-V1 has a couple of mistakes but it can be fuctional: 
+# V1 has a couple of mistakes but it can be fuctional: 
 
 The quad amplifier (LM324) has to be assembled with a 180 degree rotation if not it will be shorted.
 
