@@ -14,6 +14,8 @@ First order high and low pass filters fc = 22 Hz and fc = 482 Hz
 
 LiPo battery power management system (It can be charged from the USB port)
 
+The sampling frequency using 3.3 KSPS setting on the ADC sampling rate and 3.4 MHz I2C clock the Fs are 1.4 kHz (1ch) 714 Hz (2ch).
+
 
 # V1 has a couple of mistakes but it can be fuctional: 
 
