@@ -35,7 +35,7 @@ plt.show()
 plt.xlabel('Time (s)')
 plt.ylabel('Voltage (uV)')
 plt.plot(t, Vrect, 'm')
-plt.title('Forearm EMG signal')
+plt.title('Forearm EMG signal rectified')
 plt.legend(loc='upper right', frameon=False)
 plt.show()
 
