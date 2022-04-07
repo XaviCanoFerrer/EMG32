@@ -24,3 +24,10 @@ The JAC connectors are not close enough to the edge and depensing on the length 
 Both mistakes are solved in V2 but still not tested.
 
 ![alt text](https://github.com/XaviCanoFerrer/Wireless_EMG/blob/main/Wireless%20EMG%20.png?raw=true)
+
+![alt text](https://github.com/XaviCanoFerrer/Open_wireless_EMG/blob/main/IMG_20220404_123524.jpg?raw=true)
+
+![alt text](https://github.com/XaviCanoFerrer/Open_wireless_EMG/blob/main/IMG_20220404_123702.jpg?raw=true)
+
+
+
