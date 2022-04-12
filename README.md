@@ -1,10 +1,10 @@
-# Open wireless EMG
+# BIO_ESP32
 
-Two-channel wireless EMG acquisition system
+Two-channel EMG/EOG acquisition system
 
 # Features:
 
-Adjustable gain 100-10000
+Adjustable total gain 100-10000
 
 Instrumentation amplifier (AD8226)
 
