@@ -1,6 +1,6 @@
-# Open wireless EMG
+# ESP32_EMG
 
-Two-channel wireless EMG acquisition system
+Two-channel EMG acquisition system
 
 # Features:
 
