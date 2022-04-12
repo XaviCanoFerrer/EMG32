@@ -1,6 +1,6 @@
-# ESP32_EMG
+# BIO_ESP32
 
-Two-channel EMG acquisition system
+Two-channel EMG/EOG acquisition system
 
 # Features:
 
