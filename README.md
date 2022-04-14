@@ -1,4 +1,4 @@
-# EMG_32
+# EMG32
 
 Two-channel EMG acquisition system
 
