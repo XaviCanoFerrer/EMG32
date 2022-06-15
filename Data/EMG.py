@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.signal import kaiserord, lfilter, firwin, freqz
+from numpy.fft import fft, ifft
 plt.style.use('bmh')
 
 #Amplifier gains
@@ -48,4 +49,39 @@ plt.title('Forearm single contraction')
 plt.legend(loc='upper right', frameon=False)
 plt.xlim(12.4, 13)
 plt.ylim(-80, 60)
+plt.show()
+
+
+V2 = V[450:610]
+plt.xlabel('Time (s)')
+plt.ylabel('Voltage (uV)')
+plt.plot(V2)
+plt.title('Forearm single contraction')
+plt.legend(loc='upper right', frameon=False)
+plt.ylim(-80, 60)
+plt.show()
+
+# FFT
+#V2 = V[400:500]
+X = fft(V2)
+N = len(X)
+n = np.arange(N)
+# get the sampling rate
+sr = 385
+#sr = np.mean(np.diff(t))
+#print(np.diff(t*1000))
+T = N/sr
+freq = n/T
+
+# Get the one-sided specturm
+n_oneside = N//2
+# get the one side frequency
+f_oneside = freq[:n_oneside]
+
+#plt.figure(figsize = (12, 6))
+plt.plot(f_oneside, np.abs(X[:n_oneside]), 'b')
+plt.xlabel('Freq (Hz)')
+plt.ylabel('FFT Amplitude |X(freq)|')
+plt.xlim(0, 385/2)
+plt.ylim(0, 100)
 plt.show()

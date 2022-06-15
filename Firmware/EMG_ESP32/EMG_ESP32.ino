@@ -26,7 +26,8 @@ float volts1, volts2;
 
 void setup(void) 
 {
-  Serial.begin(256000); // Fastest Baud rate for Parallax PLX-DAQ
+  //Serial.begin(256000); // Fastest Baud rate for Parallax PLX-DAQ
+  Serial.begin(2000000);
   //To transmit in Parallax PLX-DAQ
   Serial.println("CLEARDATA");
   Serial.println("LABEL,Realtime,EMG_ch1, EMG_ch2,Time(ms)");
@@ -52,7 +53,7 @@ void setup(void)
   // ads.setGain(GAIN_EIGHT);      // 8x gain   +/- 0.512V  1 bit = 0.25mV   0.015625mV
   // ads.setGain(GAIN_SIXTEEN);    // 16x gain  +/- 0.256V  1 bit = 0.125mV  0.0078125mV
   
-  Wire.setClock(3400000);// Fastest I2C clock possible
+  Wire.setClock(400000);
   ads.setDataRate(RATE_ADS1015_3300SPS); // Fastes sampling rate possible on the ADC
   ads.begin();
   //delay(1000);
@@ -104,11 +105,6 @@ void loop(void)
       _print_1ch();
     }
   }
-
-  // Compute the time it took
-  //unsigned long end = micros();
-  //unsigned long delta = end - start;
-  //Serial.println(delta);
 }
 
 void Serial_Parallax_PLX_DAQ()
@@ -133,16 +129,16 @@ void _print()
 {
   Serial.print(volts1);
   Serial.print(" "); 
-  Serial.println(volts2);
-  //Serial.print(" "); 
-  //Serial.println(millis());
+  Serial.print(volts2);
+  Serial.print(" "); 
+  Serial.println(millis());
 }
 
 void _print_1ch()
 {
-  Serial.println(volts1);
-  //Serial.print(" "); 
-  //Serial.println(millis());
+  Serial.print(volts1);
+  Serial.print(" "); 
+  Serial.println(millis());
 }
 
 void _mode()

@@ -1,7 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.signal import kaiserord, lfilter, firwin, freqz
+#from scipy.signal import kaiserord, lfilter, firwin, freqz
+from scipy.signal import sosfiltfilt, butter
 import scipy.signal
 plt.style.use('bmh')
 
@@ -35,9 +36,11 @@ plt.show()
 #V = V.flatten()
 
 # apply a 3-pole lowpass filter at 0.1x Nyquist frequency
-b, a = scipy.signal.butter(2, 0.1)
-EOG_filtered = scipy.signal.filtfilt(b, a, V)
-
+#b, a = scipy.signal.butter(2, 0.9)
+#EOG_filtered = scipy.signal.filtfilt(b, a, V)
+sos = butter(2, 0.5, output='sos')
+EOG_filtered = scipy.signal.sosfiltfilt(sos, V, axis=- 1, padtype='odd', padlen=0)
+#EOG_filtered = scipy.signal.sosfiltfilt(butter(4, 0.125, output='sos'))
 # plot the original data next to the filtered data
 
 plt.figure(figsize=(10, 4))
@@ -46,11 +49,13 @@ plt.subplot(121)
 plt.plot(t, V)
 plt.title("EOG Signal with Noise")
 plt.margins(0, .05)
+plt.xlim(38, 40)
 
 plt.subplot(122)
 plt.plot(t, EOG_filtered)
 plt.title("Filtered EOG Signal")
 plt.margins(0, .05)
+plt.xlim(38, 40)
 
 plt.tight_layout()
 plt.show()
