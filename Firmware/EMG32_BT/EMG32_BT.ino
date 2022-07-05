@@ -29,7 +29,7 @@ float volts1, volts2;
 
 void setup(void) 
 {
-  SerialBT.begin("EMG32");
+  SerialBT.begin("WirelessEOG");
   
   pinMode(LED_pin, OUTPUT);
   pinMode(button_pin, INPUT_PULLUP);
@@ -63,8 +63,13 @@ void setup(void)
 void loop(void) 
 {
   ch1 = ads.readADC_SingleEnded(2);
+  ch2 = ads.readADC_SingleEnded(1);
   volts1 = ads.computeVolts(ch1);
-  SerialBT.println(volts1);
+  volts2 = ads.computeVolts(ch2);
+  SerialBT.print(volts1);
+  SerialBT.print("  ");
+  SerialBT.println(volts2);
+  //delay(2);
 }
 
 void _print()
