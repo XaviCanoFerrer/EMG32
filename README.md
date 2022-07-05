@@ -30,3 +30,6 @@ Both mistakes are solved in V2 but still not tested.
 
 ![alt text](https://github.com/XaviCanoFerrer/EMG_32/blob/main/Figure.png?raw=true)
 
+# Next steps
+
+Change the ADC for one with higher sampling rate
