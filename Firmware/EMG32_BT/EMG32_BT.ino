@@ -29,7 +29,7 @@ float volts1, volts2;
 
 void setup(void) 
 {
-  SerialBT.begin("WirelessEOG");
+  SerialBT.begin("EMG32");
   
   pinMode(LED_pin, OUTPUT);
   pinMode(button_pin, INPUT_PULLUP);
