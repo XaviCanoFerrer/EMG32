@@ -18,7 +18,7 @@ The basic code has two modes, 2ch and 1 ch modes which can be selected pressing 
 
 SW2 to reset the board.
 
-Sampling frequencies 385 Hz through the serial port and 200 Hz using BLE for 1 channel so not enough for sEMG standards Fs = 1kHz. 
+Sampling frequencies 385 Hz through the serial port and 200 Hz using BT for 1 channel so not enough for sEMG standards Fs = 1kHz. 
 
 # V1 has a couple of mistakes but it can be fuctional: 
 
@@ -30,3 +30,6 @@ Both mistakes are solved in V2 but still not tested.
 
 ![alt text](https://github.com/XaviCanoFerrer/EMG_32/blob/main/Figure.png?raw=true)
 
+# Next steps
+
+Change the ADC for one with higher sampling rate
