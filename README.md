@@ -20,10 +20,10 @@ SW2 to reset the board.
 
 Sampling frequencies 385 Hz through the serial port and 200 Hz using BT for 1 channel so not enough for sEMG standards Fs = 1kHz. 
 
-It is still usable to measure muscle activity but not for frequency dependant processing or analysis.
+It is still usable to measure muscle activity but not for frequency dependant processing or analysis as is shown in the single contraction spectrum:
 
 <p align="center">
-  <img width="640" height="480" src="https://user-images.githubusercontent.com/54901317/214152530-e8083803-7724-4060-a290-7e1f43e9bdb6.png">
+  <img width="448" height="336" src="https://user-images.githubusercontent.com/54901317/214152530-e8083803-7724-4060-a290-7e1f43e9bdb6.png">
 </p>
 
 # V1 has a couple of mistakes but it can be fuctional: 
