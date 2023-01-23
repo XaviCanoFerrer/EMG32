@@ -26,7 +26,7 @@ The quad amplifier (LM324) has to be assembled with a 180 degree rotation if not
 
 The JAC connectors are not close enough to the edge and depensing on the length of your cable it won't go deep enough to make a good contact.
 
-Both mistakes are solved in V2 but still not tested.
+Both mistakes are solved in V2.
 
 ![alt text](https://github.com/XaviCanoFerrer/EMG_32/blob/main/Figure.png?raw=true)
 
