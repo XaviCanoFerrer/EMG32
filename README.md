@@ -22,6 +22,8 @@ Sampling frequencies 385 Hz through the serial port and 200 Hz using BT for 1 ch
 
 It is still usable to measure muscle activity but not for frequency dependant processing or analysis.
 
+![fft  single contraction](https://user-images.githubusercontent.com/54901317/214152530-e8083803-7724-4060-a290-7e1f43e9bdb6.png)
+
 # V1 has a couple of mistakes but it can be fuctional: 
 
 The quad amplifier (LM324) has to be assembled with a 180 degree rotation if not it will be shorted.
@@ -31,4 +33,6 @@ The JAC connectors are not close enough to the edge and depensing on the length 
 Both mistakes are solved in V2.
 
 ![alt text](https://github.com/XaviCanoFerrer/EMG_32/blob/main/Figure.png?raw=true)
+
+
 
