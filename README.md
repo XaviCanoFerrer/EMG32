@@ -20,6 +20,8 @@ SW2 to reset the board.
 
 Sampling frequencies 385 Hz through the serial port and 200 Hz using BT for 1 channel so not enough for sEMG standards Fs = 1kHz. 
 
+It is still usable to measure muscle activity but not for frequency dependant processing or analysis.
+
 # V1 has a couple of mistakes but it can be fuctional: 
 
 The quad amplifier (LM324) has to be assembled with a 180 degree rotation if not it will be shorted.
